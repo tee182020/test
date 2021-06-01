@@ -24,9 +24,9 @@ Pseudo-codes are simplified version of computer programs and written in nantural
 for example, a pseudo-code of counting members is as follows:
 
 ```
-members_count is set to be zero<br />
-loop while the input of member name is not empty<br />
-    increment members_count by one<br />
+members_count is set to be zero
+loop while the input of member name is not empty
+    increment members_count by one
 output members_count
 ```
 
@@ -38,41 +38,46 @@ An algorithm can be described as a pictorial representation with different symbo
 - The described steps are easy to follow.
 - Following the logic in diagram does not require understanding of the code.
  
-for example, a flowchart of counting members is as follows:<br />
-        ---------------------------------<br />
-        |    members_count = 0          |<br />
-        ---------------------------------<br />
+for example, a flowchart of counting members is as follows:
+```
+        ---------------------------------
+        |    members_count = 0          |
+        ---------------------------------
                       |<br />
                       V<br />
                       *<br />
                     ******<br />
-                  **********                      no<br />
-     ------->* while input name is not empty *-------------<br />
-     |            **********                              |<br />
-     |              *******                               |<br />
-     |                 *                                  |<br />
-     |                 |  yes                             |<br />
-     |                 V                                  |<br />
-     |    -------------------------------------------     |<br />
-     ----|   increment members_count by one |     |<br />
-         --------------------------------------------     |<br />
-                                                          |<br />
-                                                          |<br />
-                                                          V<br />
-         ---------------------------------------------------------<br />
-         |  output members_count                                 |<br />
-         ---------------------------------------------------------<br />
+                  **********                      no
+     ------->* while input name is not empty *-------------
+     |            **********                              |
+     |              *******                               |
+     |                 *                                  |
+     |                 |  yes                             |
+     |                 V                                  |
+     |    -------------------------------------------     |
+     ----|   increment members_count by one         |
+         --------------------------------------------     |
+                                                          |
+                                                          |
+                                                          V
+         ---------------------------------------------------------
+         |  output members_count                                 |
+         ---------------------------------------------------------
+```
 
-## Example of Python code implementation
-For reference, the above pseudo-code or flowchart can be followed to write a Python code as follows:
+## Python code implementation
+The above pseudo-code or flowchart can be followed to write a Python code as follows:
+```
+members_count = 0
+while (input("name? ") != ""):
+    members_count += 1
+print(members_count)
+```
 
-members_count = 0<br />
-while (input("name? ") != ""):<br />
-    members_count += 1<br />
-print(members_count)<br />
-
--Output:<br />
-name? Jack Lee<br />
-name? Mary Lo<br />
-name? <br />
-2<br />
+Output:
+```
+name? Jack Lee
+name? Mary Lo
+name?
+2
+```
