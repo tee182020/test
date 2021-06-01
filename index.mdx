@@ -1,8 +1,8 @@
 ---
-title: Algorithm
+title: Algorithms
 ---
 
-# Algorithm
+# Algorithms
 
 ### An algorithm is the set of instructions in steps to solve a problem.
 
@@ -12,20 +12,20 @@ So we count a member and add one to the previous counted number, go to next memb
 
 For a computer to solve a problem or perform a task for us, for example, a counting poblem, we give it a sequence of instructions similar to the step-bt-step procedure humans follow ourselves. An algorithm is a sequence of instructions given to computers to solve problems or perform tasks.
 
-An algorithm can be written by a plain langugae, a pseudo-code or described by a diagram-representd flowchart and it can be implemented in different computer programming langugages. 
+An algorithm can be written by a plain langugae, a pseudo-code or described by a diagram-based flowchart and it can be implemented in different computer programming langugages. 
 
 ## Pseudo-code
 Pseudo-codes are simplified version of computer programs and written in nantural language.
 
-- Pseudo-code can be read and followed by programmers to write computer program.
-- Pseudo-code does not have specific syntax and can't be excuted by a computer.
-- Pseudo-code can be implemented in specific programming language.
+- Pseudo-code can be read and followed by programmers to write computer programs.
+- Pseudo-code does not have specific syntax and can't be executed by a computer.
+- Pseudo-code can be implemented in a specific programming language.
 
 for example, a pseudo-code of counting members is as follows:
 
-num_members_far is set to be zero before counting
-while the input of member name is not empty
-    increment number_members_so_far by one
+num_members_far is set to be zero before counting<br />
+while the input of member name is not empty<br />
+    increment number_members_so_far by one<br />
 num_members_so_far is the total number of members at the end
 
 ## Flowchart
@@ -34,43 +34,43 @@ An algorithm can be described as a pictorial representation with different symbo
 - The process is represented graphically.
 - The process is described block by block with the arrows between blocks indicating the order of workflow.
 - The described steps are easy to follow.
-- Cost less time and does not require the understanding of code.
+- Following the logic in diagram does not require understanding of the code.
  
-for example, a flowchart of counting members is as follows:
-        --------------------------------
-        |    num_members_so_far = 0     |
-        ---------------------------------
-                      |
-                      V
-                      *
-                    ******
-                  **********                      otherwise
-     ------->* while input name is not empty *-------------
-     |            **********                              |
-     |              *******                               |
-     |                 *                                  |
-     |                 |                                  |
-     |                 V                                  |
-     |    -------------------------------------------     |
-     ----|   increment number_members_so_far by one |     |
-         --------------------------------------------     |
-                                                          |
-                                                          |
-                                                          V
-         ---------------------------------------------------------
-         |  output number_members_so_far as total_number_members |
-         ----------------------------------------------------------
+for example, a flowchart of counting members is as follows:<br />
+        ---------------------------------<br />
+        |    num_members_so_far = 0     |<br />
+        ---------------------------------<br />
+                      |<br />
+                      V<br />
+                      *<br />
+                    ******<br />
+                  **********                      no<br />
+     ------->* while input name is not empty *-------------<br />
+     |            **********                              |<br />
+     |              *******                               |<br />
+     |                 *                                  |<br />
+     |                 |  yes                             |<br />
+     |                 V                                  |<br />
+     |    -------------------------------------------     |<br />
+     ----|   increment number_members_so_far by one |     |<br />
+         --------------------------------------------     |<br />
+                                                          |<br />
+                                                          |<br />
+                                                          V<br />
+         ---------------------------------------------------------<br />
+         |  output number_members_so_far as total_number_members |<br />
+         ---------------------------------------------------------<br />
 
 ## Example of Python code implementation
 For reference, the above pseudo-code or flowchart can be followed to write a Python code as follows:
 
-number_members_so_far = 0
-while (input("name? ") != ""):
-     number_members_so_far += 1
-print(number_members_so_far)
+number_members_so_far = 0<br />
+while (input("name? ") != ""):<br />
+     number_members_so_far += 1<br />
+print(number_members_so_far)<br />
 
-sample output of the above Python code:
-name? Jack Lee
-name? Mary Lo
-name? 
-2
+sample output of the above Python code:<br />
+name? Jack Lee<br />
+name? Mary Lo<br />
+name? <br />
+2<br />
