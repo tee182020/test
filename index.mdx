@@ -23,10 +23,10 @@ Pseudo-codes are simplified version of computer programs and written in nantural
 
 for example, a pseudo-code of counting members is as follows:
 
-num_members_far is set to be zero before counting<br />
-while the input of member name is not empty<br />
-    increment number_members_so_far by one<br />
-num_members_so_far is the total number of members at the end
+members_count is set to be zero<br />
+loop while the input of member name is not empty<br />
+'''    increment members_count by one<br />
+output members_count
 
 ## Flowchart
 An algorithm can be described as a pictorial representation with different symbols, shapes, arrow that describes the different process. Each shape describes a different process:
@@ -38,7 +38,7 @@ An algorithm can be described as a pictorial representation with different symbo
  
 for example, a flowchart of counting members is as follows:<br />
         ---------------------------------<br />
-        |    num_members_so_far = 0     |<br />
+        |    members_count = 0          |<br />
         ---------------------------------<br />
                       |<br />
                       V<br />
@@ -52,24 +52,24 @@ for example, a flowchart of counting members is as follows:<br />
      |                 |  yes                             |<br />
      |                 V                                  |<br />
      |    -------------------------------------------     |<br />
-     ----|   increment number_members_so_far by one |     |<br />
+     ----|   increment members_count by one |     |<br />
          --------------------------------------------     |<br />
                                                           |<br />
                                                           |<br />
                                                           V<br />
          ---------------------------------------------------------<br />
-         |  output number_members_so_far as total_number_members |<br />
+         |  output members_count                                 |<br />
          ---------------------------------------------------------<br />
 
 ## Example of Python code implementation
 For reference, the above pseudo-code or flowchart can be followed to write a Python code as follows:
 
-number_members_so_far = 0<br />
+members_count = 0<br />
 while (input("name? ") != ""):<br />
-     number_members_so_far += 1<br />
-print(number_members_so_far)<br />
+     members_count += 1<br />
+print(members_count)<br />
 
-sample output of the above Python code:<br />
+-Output:<br />
 name? Jack Lee<br />
 name? Mary Lo<br />
 name? <br />
