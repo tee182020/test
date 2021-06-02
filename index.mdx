@@ -67,7 +67,7 @@ For example, a flowchart of counting members is as follows:
      ----|   increment total_number_members by one  |     |
          --------------------------------------------     |
                                                           |
-                           _______________________________|
+                           --------------------------------
                            |
                            V
                 -------------------------------------
@@ -80,11 +80,11 @@ For example, a flowchart of counting members is as follows:
                        \......./
 ```
 
-## Python code implementation
+## Python implementation
 The above pseudo-code or flowchart can be followed to write a Python code as follows:
 ```Python
 total_number_members = 0
-while (input("name? ") != ""):
+while input("name? ") != "":
     total_number_members += 1
 print(total_number_members)
 ```
